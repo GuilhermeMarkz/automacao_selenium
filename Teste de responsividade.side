@@ -1,0 +1,82 @@
+{
+  "id": "e5ca2121-4028-443f-95e2-4ce8cb139cba",
+  "version": "2.0",
+  "name": "Teste de responsividade",
+  "url": "http://localhost/landing_page/",
+  "tests": [{
+    "id": "c9586b3a-e887-424e-8cc2-cbe9d3991076",
+    "name": "Teste de responsividade1",
+    "commands": [{
+      "id": "04e75f46-2de9-4cb2-a0cc-f6bb839d401c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/landing_page/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0611b24a-d2d1-4b01-a654-b76652be37a5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "462x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fcefdec9-f83f-492c-b863-cf5215ff45d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(1) > b",
+      "targets": [
+        ["css=a:nth-child(1) > b", "css:finder"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Início')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1635dcd-7c79-4b1b-89b3-8afbc4ae46af",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2) > b",
+      "targets": [
+        ["css=a:nth-child(2) > b", "css:finder"],
+        ["xpath=//a[2]/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Serviços')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0680e69b-b7ff-448a-b5db-8b0d5ba8f1ee",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contato",
+      "targets": [
+        ["linkText=Contato", "linkText"],
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(@href, '#contato')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Contato')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbeaf7b0-1266-43c2-b3f8-1f248045b418",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(5) > b",
+      "targets": [
+        ["css=a:nth-child(5) > b", "css:finder"],
+        ["xpath=//section[@id='showcase']/div/a/b", "xpath:idRelative"],
+        ["xpath=//div/a/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Saiba mais')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7720b58c-785d-4738-a890-b6e3ef7679d6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost/landing_page/"],
+  "plugins": []
+}
